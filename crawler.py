@@ -1,4 +1,7 @@
-# Simple Crawler
+# Simple Crawler 
+#  
+#
+
 import urllib.request as req
 url="https://www.ptt.cc/bbs/Stock/index.html"
 
