@@ -9,7 +9,13 @@ request=req.Request(url, headers={
 with req.urlopen(request) as response:
     data=response.read().decode("utf-8")
 
-print(data)    
+# print(data)    
 
-#lll ddd
-#sdsd 
+import bs4
+root = bs4.BeautifulSoup(data,'html.parser')
+titles=root.findAll("div", class_="title")
+
+#列出所有標題
+for title in titles:
+    if title!= None:
+        print(title.a.string) #找尋a標題裡面的string
