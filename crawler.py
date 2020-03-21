@@ -19,3 +19,4 @@ titles=root.findAll("div", class_="title")
 for title in titles:
     if title!= None:
         print(title.a.string) #找尋a標題裡面的string
+####
